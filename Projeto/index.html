@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Interface Studio</title>
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- Fonte -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- Swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<style>
+
+body{
+font-family:'Poppins',sans-serif;
+}
+
+.hero{
+background: linear-gradient(135deg,#BDDDFC,#88BDF2);
+}
+
+</style>
+
+</head>
+
+<body class="text-[#384959]">
+
+<!-- NAVBAR -->
+
+<nav class="fixed w-full bg-white/70 backdrop-blur-lg shadow-sm z-50">
+
+<div class="max-w-6xl mx-auto flex justify-between items-center p-5">
+
+<h1 class="font-bold text-xl">Interface Studio</h1>
+
+<ul class="hidden md:flex gap-8">
+
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#habilidades">Habilidades</a></li>
+<li><a href="#projetos">Projetos</a></li>
+<li><a href="#contato">Contato</a></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero min-h-screen flex items-center">
+
+<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+
+<div data-aos="fade-right">
+
+<h1 class="text-5xl md:text-6xl font-bold mb-6">
+
+Nós somos  
+<span class="text-white">Interface Studio</span>
+
+</h1>
+
+<h2 class="text-2xl mb-6">
+<span id="typing"></span>
+</h2>
+
+<p class="mb-8 text-gray-700">
+
+Desenvolvedores focados em criar interfaces modernas e profissionais para web.
+
+</p>
+
+<a href="#projetos"
+class="bg-[#384959] text-white px-6 py-3 rounded-xl hover:scale-105 transition">
+
+Ver Projetos
+
+</a>
+
+</div>
+
+<!-- CARROSSEL -->
+
+<div class="flex justify-center" data-aos="zoom-in">
+
+<div class="swiper w-[350px] md:w-[550px] rounded-3xl shadow-2xl overflow-hidden">
+
+<div class="swiper-wrapper">
+
+<div class="swiper-slide">
+<img src="assets/1.png" class="w-full">
+</div>
+
+<div class="swiper-slide">
+<img src="assets/2.png" class="w-full">
+</div>
+
+<div class="swiper-slide">
+<img src="assets/3.png" class="w-full">
+</div>
+
+<div class="swiper-slide">
+<img src="assets/4.png" class="w-full">
+</div>
+
+</div>
+
+<div class="swiper-pagination"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SOBRE -->
+
+<section id="sobre" class="py-24 bg-white">
+
+<div class="max-w-4xl mx-auto text-center px-6" data-aos="fade-up">
+
+<h2 class="text-4xl font-bold mb-6">
+
+Sobre Nós
+
+</h2>
+
+<p class="text-gray-600">
+
+Somos um grupo dedicados ao estudo e desenvolvimento de interfaces web modernas. Criamos este portfólio com o objetivo de apresentar nossos projetos e colocar em prática os conhecimentos adquiridos durante nossa formação.
+
+Entre os projetos apresentados está o Café Harmonia, um site desenvolvido para uma cafeteria fictícia, no qual aplicamos conceitos de design, experiência do usuário e desenvolvimento front-end.
+</p>
+
+</div>
+
+</section>
+
+<!-- HABILIDADES -->
+
+<section id="habilidades" class="py-24 bg-gray-50">
+
+<div class="max-w-6xl mx-auto px-6">
+
+<h2 class="text-4xl font-bold text-center mb-16">
+
+Habilidades
+
+</h2>
+
+<div class="grid md:grid-cols-4 gap-8 text-center">
+
+<div class="bg-white p-6 rounded-xl shadow">HTML</div>
+
+<div class="bg-white p-6 rounded-xl shadow">CSS</div>
+
+<div class="bg-white p-6 rounded-xl shadow">JavaScript</div>
+
+<div class="bg-white p-6 rounded-xl shadow">Tailwind CSS</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJETOS -->
+
+<section id="projetos" class="py-24 bg-white">
+
+<div class="max-w-6xl mx-auto px-6">
+
+<h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">
+Projeto em Destaque
+</h2>
+
+<div class="grid md:grid-cols-2 gap-12 items-center">
+
+<img src="assets/cafe.jpg"
+class="rounded-2xl shadow-xl"
+data-aos="fade-right">
+
+<div data-aos="fade-left">
+
+<h3 class="text-3xl font-bold mb-4">
+Café Harmonia
+</h3>
+
+<p class="text-gray-600 mb-6">
+Website institucional para cafeteria com foco em design moderno e experiência do usuário.
+</p>
+
+<a href="https://romavitordev.github.io/cafeharmoniav2/"
+target="_blank"
+class="bg-[#6A89A7] text-white px-6 py-3 rounded-xl hover:bg-[#384959]">
+Acessar Projeto
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTATO -->
+
+<section id="contato" class="py-24 bg-gray-50">
+
+<div class="max-w-xl mx-auto text-center px-6">
+
+<h2 class="text-4xl font-bold mb-6">
+
+Contato
+
+</h2>
+
+<p class="text-gray-600 mb-8">
+
+Entre em contato para novos projetos ou oportunidades.
+
+</p>
+
+<a href="mailto:seuemail@email.com?subject=Contato%20do%20Portfólio"
+class="bg-[#6A89A7] text-white px-8 py-4 rounded-xl hover:bg-[#384959]">
+
+Enviar Email
+
+</a>
+
+</div>
+
+</section>
+
+<footer class="bg-[#384959] text-white text-center p-8">
+
+<p>© 2026 Interface Studio</p>
+
+</footer>
+
+<!-- SCRIPTS -->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+
+AOS.init({
+duration:1000
+})
+
+const swiper = new Swiper('.swiper', {
+
+loop:true,
+
+autoplay:{
+delay:3000,
+},
+
+pagination:{
+el:'.swiper-pagination',
+clickable:true
+}
+
+})
+
+</script>
+
+<script>
+
+new Typed("#typing",{
+
+strings:[
+"Desenvolvedor Web",
+"Criador de Interfaces",
+"Front-End Developer"
+],
+
+typeSpeed:60,
+backSpeed:40,
+loop:true
+
+})
+
+</script>
+
+</body>
+</html>
