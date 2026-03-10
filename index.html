@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR" class="scroll-smooth"></html>
 
 <head>
 
@@ -21,6 +21,11 @@
 <!-- Swiper -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 <style>
 
 body{
@@ -39,26 +44,80 @@ background: linear-gradient(135deg,#BDDDFC,#88BDF2);
 
 <!-- NAVBAR -->
 
-<nav class="fixed w-full bg-white/70 backdrop-blur-lg shadow-sm z-50">
+<header class="fixed w-full bg-white shadow z-50">
+  <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-<div class="max-w-6xl mx-auto flex justify-between items-center p-5">
+    <!-- Logo -->
+    <h1 class="text-2xl font-bold text-[#384959]">
+      Interface Studio
+    </h1>
 
-<h1 class="font-bold text-xl">Interface Studio</h1>
+    <!-- Menu -->
+    <ul class="flex items-center gap-8 text-gray-700 font-medium">
 
-<ul class="hidden md:flex gap-8">
+      <li>
+        <a href="#inicio" class="hover:text-[#6A89A7] transition">
+          Início
+        </a>
+      </li>
 
-<li><a href="#sobre">Sobre</a></li>
-<li><a href="#habilidades">Habilidades</a></li>
-<li><a href="#projetos">Projetos</a></li>
-<li><a href="#contato">Contato</a></li>
+      <li>
+        <a href="#sobre" class="hover:text-[#6A89A7] transition">
+          Sobre
+        </a>
+      </li>
 
-</ul>
+      <li>
+        <a href="#servicos" class="hover:text-[#6A89A7] transition">
+          Serviços
+        </a>
+      </li>
 
-</div>
+      <li>
+        <a href="#projetos" class="hover:text-[#6A89A7] transition">
+          Projetos
+        </a>
+      </li>
 
-</nav>
+      <li>
+        <a href="#contato" class="hover:text-[#6A89A7] transition">
+          Contato
+        </a>
+      </li>
+
+      <!-- Botão orçamento -->
+      <li>
+        <a href="#contato"
+        class="bg-[#6A89A7] text-white px-5 py-2 rounded-lg hover:bg-[#384959] transition shadow">
+        Faça seu orçamento
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+</header>
 
 <!-- HERO -->
+
+<section id="inicio">
+  <div>
+
+  </div>
+
+</section>
+
+
+
+  <div class="absolute inset-0 flex items-center justify-center">
+
+    <img 
+    src="assets/5.jpeg"
+    class="w-[1460px] opacity-15"
+    style="filter: contrast(1.1) brightness(0.9);">
+
+  </div>
+
 
 <section class="hero min-h-screen flex items-center">
 
@@ -128,55 +187,88 @@ Ver Projetos
 
 </section>
 
+<!-- INICIO -->
+
 <!-- SOBRE -->
 
 <section id="sobre" class="py-24 bg-white">
 
-<div class="max-w-4xl mx-auto text-center px-6" data-aos="fade-up">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 
-<h2 class="text-4xl font-bold mb-6">
 
-Sobre Nós
-
+<div data-aos="fade-right">
+<h2 class="text-4xl font-bold text-[#384959] mb-6">
+Quem Somos
 </h2>
 
-<p class="text-gray-600">
-
-Somos um grupo dedicados ao estudo e desenvolvimento de interfaces web modernas. Criamos este portfólio com o objetivo de apresentar nossos projetos e colocar em prática os conhecimentos adquiridos durante nossa formação.
-
-Entre os projetos apresentados está o Café Harmonia, um site desenvolvido para uma cafeteria fictícia, no qual aplicamos conceitos de design, experiência do usuário e desenvolvimento front-end.
+<p class="text-gray-600 mb-4 leading-relaxed">
+Somos um grupo de estudantes da UNIP, unidos pelo objetivo de desenvolver soluções digitais e aprimorar nossas habilidades na área de desenvolvimento web. Este portfólio foi criado como parte de um projeto acadêmico, com o propósito de apresentar nossos conhecimentos em design de interface, organização visual, responsividade e construção de aplicações web modernas.
 </p>
+
+<p class="text-gray-600 mb-4 leading-relaxed">
+Nosso foco é explorar boas práticas de desenvolvimento front-end, criando interfaces intuitivas, organizadas e visualmente agradáveis. Durante o desenvolvimento deste projeto, buscamos aplicar conceitos atuais de experiência do usuário (UX), design de interface (UI) e uso de frameworks modernos para construção de layouts responsivos.
+</p>
+
+<p class="text-gray-600 mb-4 leading-relaxed">
+Além de representar uma atividade acadêmica, este portfólio também funciona como um espaço para demonstrar nossa evolução como desenvolvedores e designers, reunindo projetos práticos que refletem nosso aprendizado ao longo do curso.
+</p>
+
+</div>
+<!-- IMAGEM -->
+
+<div data-aos="fade-left">
+
+<img 
+src="assets/dev-hero.png"
+class="rounded-2xl shadow-xl w-full">
+
+</div>
+
 
 </div>
 
 </section>
 
-<!-- HABILIDADES -->
+<!-- SERVIÇOS -->
 
-<section id="habilidades" class="py-24 bg-gray-50">
+<section id="servicos" class="py-20 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6 text-center">
 
-<div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-[#384959] mb-12">
+      Serviços
+    </h2>
 
-<h2 class="text-4xl font-bold text-center mb-16">
+    <div class="grid md:grid-cols-3 gap-8">
 
-Habilidades
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-3 text-[#6A89A7]">
+          Desenvolvimento Web
+        </h3>
+        <p class="text-gray-600">
+          Criação de sites modernos, rápidos e responsivos para empresas e projetos.
+        </p>
+      </div>
 
-</h2>
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-3 text-[#6A89A7]">
+          UI / UX Design
+        </h3>
+        <p class="text-gray-600">
+          Interfaces modernas focadas em experiência do usuário e organização visual.
+        </p>
+      </div>
 
-<div class="grid md:grid-cols-4 gap-8 text-center">
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-3 text-[#6A89A7]">
+          Protótipos e Layouts
+        </h3>
+        <p class="text-gray-600">
+          Desenvolvimento de layouts profissionais para apresentação de sistemas e projetos.
+        </p>
+      </div>
 
-<div class="bg-white p-6 rounded-xl shadow">HTML</div>
-
-<div class="bg-white p-6 rounded-xl shadow">CSS</div>
-
-<div class="bg-white p-6 rounded-xl shadow">JavaScript</div>
-
-<div class="bg-white p-6 rounded-xl shadow">Tailwind CSS</div>
-
-</div>
-
-</div>
-
+    </div>
+  </div>
 </section>
 
 <!-- PROJETOS -->
@@ -221,38 +313,173 @@ Acessar Projeto
 
 <!-- CONTATO -->
 
-<section id="contato" class="py-24 bg-gray-50">
+<section id="contato" class="py-24 bg-[#BDDDFC]">
 
-<div class="max-w-xl mx-auto text-center px-6">
+<div class="max-w-5xl mx-auto px-6">
 
-<h2 class="text-4xl font-bold mb-6">
+<div class="text-center mb-12">
 
-Contato
-
+<h2 class="text-4xl font-bold text-[#384959] mb-4">
+Solicite um orçamento
 </h2>
 
-<p class="text-gray-600 mb-8">
-
-Entre em contato para novos projetos ou oportunidades.
-
+<p class="text-gray-700 max-w-2xl mx-auto">
+Entre em contato conosco para saber mais sobre nossos projetos ou solicitar um orçamento. 
+Responderemos o mais breve possível.
 </p>
 
-<a href="mailto:seuemail@email.com?subject=Contato%20do%20Portfólio"
-class="bg-[#6A89A7] text-white px-8 py-4 rounded-xl hover:bg-[#384959]">
+</div>
 
-Enviar Email
 
+<div class="grid md:grid-cols-3 gap-8 mb-16">
+
+<!-- TELEFONE -->
+
+<div data-aos="fade-up"
+class="bg-white p-8 rounded-xl shadow-lg text-center transition transform hover:-translate-y-2 hover:shadow-2xl">
+
+<div class="text-4xl text-[#6A89A7] mb-4">
+<i class="fa-solid fa-phone"></i>
+</div>
+
+<h3 class="text-xl font-semibold text-[#384959] mb-2">
+Telefone / WhatsApp
+</h3>
+
+<p class="text-gray-600 mb-3">
+Fale diretamente com nossa equipe
+</p>
+
+<a href="https://wa.me/5511999999999"
+class="text-[#6A89A7] font-semibold hover:underline">
+(11) 99999-9999
 </a>
 
 </div>
 
+
+<!-- EMAIL -->
+
+<div data-aos="fade-up" data-aos-delay="150"
+class="bg-white p-8 rounded-xl shadow-lg text-center transition transform hover:-translate-y-2 hover:shadow-2xl">
+
+<div class="text-4xl text-[#6A89A7] mb-4">
+<i class="fa-solid fa-envelope"></i>
+</div>
+
+<h3 class="text-xl font-semibold text-[#384959] mb-2">
+Email
+</h3>
+
+<p class="text-gray-600 mb-3">
+Envie uma mensagem para nossa equipe
+</p>
+
+<a href="mailto:contato@interfacestudio.com"
+class="text-[#6A89A7] font-semibold hover:underline">
+contato@interfacestudio.com
+</a>
+
+</div>
+
+
+<!-- HORÁRIO -->
+
+<div data-aos="fade-up" data-aos-delay="300"
+class="bg-white p-8 rounded-xl shadow-lg text-center transition transform hover:-translate-y-2 hover:shadow-2xl">
+
+<div class="text-4xl text-[#6A89A7] mb-4">
+<i class="fa-solid fa-clock"></i>
+</div>
+
+<h3 class="text-xl font-semibold text-[#384959] mb-2">
+Horário de Funcionamento
+</h3>
+
+<p class="text-gray-600">
+Segunda a Sexta  
+</p>
+
+<p class="text-[#6A89A7] font-semibold">
+09:00 – 18:00
+</p>
+
+</div>
+
+</div>
+
+
+<form class="bg-white shadow-xl rounded-xl p-10 grid md:grid-cols-2 gap-6">
+
+<!-- Nome -->
+<div class="flex flex-col">
+<label class="mb-2 font-semibold text-gray-700">Nome</label>
+<input 
+type="text"
+placeholder="Digite seu nome"
+class="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#6A89A7]"
+>
+</div>
+
+<!-- Email -->
+<div class="flex flex-col">
+<label class="mb-2 font-semibold text-gray-700">Email</label>
+<input 
+type="email"
+placeholder="Digite seu email"
+class="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#6A89A7]"
+>
+</div>
+
+<!-- Telefone -->
+<div class="flex flex-col">
+<label class="mb-2 font-semibold text-gray-700">Telefone</label>
+<input 
+type="tel"
+placeholder="(11) 99999-9999"
+class="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#6A89A7]"
+>
+</div>
+
+<!-- Assunto -->
+<div class="flex flex-col">
+<label class="mb-2 font-semibold text-gray-700">Assunto</label>
+<input 
+type="text"
+placeholder="Ex: Criação de site"
+class="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#6A89A7]"
+>
+</div>
+
+<!-- Mensagem -->
+<div class="flex flex-col md:col-span-2">
+<label class="mb-2 font-semibold text-gray-700">Mensagem</label>
+<textarea 
+rows="5"
+placeholder="Digite sua mensagem..."
+class="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#6A89A7]"
+></textarea>
+</div>
+
+<!-- Botão -->
+<div class="md:col-span-2 text-center mt-4">
+
+<button
+type="submit"
+class="bg-[#6A89A7] text-white px-10 py-3 rounded-lg font-semibold hover:bg-[#384959] transition shadow-lg"
+>
+
+Enviar mensagem
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
 </section>
-
-<footer class="bg-[#384959] text-white text-center p-8">
-
-<p>© 2026 Interface Studio</p>
-
-</footer>
 
 <!-- SCRIPTS -->
 
@@ -300,6 +527,20 @@ loop:true
 })
 
 </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init({
+duration:1000,
+once:true
+});
+</script>
+
+<button id="btnTopo"
+class="fixed bottom-6 right-6 bg-[#6A89A7] text-white p-3 rounded-full shadow-lg hover:bg-[#384959] transition hidden">
+↑
+</button>
 
 </body>
 </html>
