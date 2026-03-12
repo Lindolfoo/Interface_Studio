@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth"></html>
+<html lang="pt-BR" class="scroll-smooth">
 
 <head>
 
@@ -24,9 +24,18 @@
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 <style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html, body {
+overflow-x: hidden;
+max-width: 100vw;
+width: 100%;
+}
 
 body{
 font-family:'Poppins',sans-serif;
@@ -36,6 +45,25 @@ font-family:'Poppins',sans-serif;
 background: linear-gradient(135deg,#BDDDFC,#88BDF2);
 }
 
+/* Bottom Nav - Only show on mobile */
+@media (max-width: 767px) {
+body {
+padding-bottom: 60px;
+}
+#bottomNav {
+display: flex !important;
+}
+#bottomNav a {
+flex: 1;
+justify-content: center;
+}
+}
+
+@media (min-width: 768px) {
+#bottomNav {
+display: none !important;
+}
+}
 </style>
 
 </head>
@@ -52,8 +80,8 @@ background: linear-gradient(135deg,#BDDDFC,#88BDF2);
       Interface Studio
     </h1>
 
-    <!-- Menu -->
-    <ul class="flex items-center gap-8 text-gray-700 font-medium">
+    <!-- Menu Desktop -->
+    <ul class="hidden md:flex items-center gap-8 text-gray-700 font-medium">
 
       <li>
         <a href="#inicio" class="hover:text-[#6A89A7] transition">
@@ -99,29 +127,18 @@ background: linear-gradient(135deg,#BDDDFC,#88BDF2);
 </header>
 
 <!-- HERO -->
+<section id="inicio" class="hero min-h-screen flex items-center">
 
-<section id="inicio">
-  <div>
-
-  </div>
-
-</section>
-
-
-
-  <div class="absolute inset-0 flex items-center justify-center">
-
+  <!-- Imagem de marca d'água -->
+  <div class="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none">
     <img 
     src="assets/5.jpeg"
     class="w-[1460px] opacity-15"
-    style="filter: contrast(1.1) brightness(0.9);">
-
+    style="filter: contrast(1.1) brightness(0.9);"
+    alt="">
   </div>
 
-
-<section class="hero min-h-screen flex items-center">
-
-<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center relative z-10 w-full">
 
 <div data-aos="fade-right">
 
@@ -160,19 +177,19 @@ Ver Projetos
 <div class="swiper-wrapper">
 
 <div class="swiper-slide">
-<img src="assets/1.png" class="w-full">
+<img src="assets/1.png" class="w-full" alt="">
 </div>
 
 <div class="swiper-slide">
-<img src="assets/2.png" class="w-full">
+<img src="assets/2.png" class="w-full" alt="">
 </div>
 
 <div class="swiper-slide">
-<img src="assets/3.png" class="w-full">
+<img src="assets/3.png" class="w-full" alt="">
 </div>
 
 <div class="swiper-slide">
-<img src="assets/4.png" class="w-full">
+<img src="assets/4.png" class="w-full" alt="">
 </div>
 
 </div>
@@ -186,8 +203,6 @@ Ver Projetos
 </div>
 
 </section>
-
-<!-- INICIO -->
 
 <!-- SOBRE -->
 
@@ -220,7 +235,8 @@ Além de representar uma atividade acadêmica, este portfólio também funciona 
 
 <img 
 src="assets/dev-hero.png"
-class="rounded-2xl shadow-xl w-full">
+class="rounded-2xl shadow-xl w-full"
+alt="">
 
 </div>
 
@@ -284,7 +300,8 @@ Projeto em Destaque
 <div class="grid md:grid-cols-2 gap-12 items-center">
 
 <img src="assets/cafe.jpg"
-class="rounded-2xl shadow-xl"
+class="rounded-2xl shadow-xl w-full"
+alt=""
 data-aos="fade-right">
 
 <div data-aos="fade-left">
@@ -481,6 +498,32 @@ Enviar mensagem
 
 </section>
 
+<!-- BOTTOM NAVIGATION BAR (MOBILE) -->
+<nav id="bottomNav" class="fixed bottom-0 left-0 right-0 bg-white shadow-lg z-50 hidden" style="width: 100%; max-width: 100vw;">
+  <div class="flex justify-around items-center py-3 w-full">
+    <a href="#inicio" class="flex flex-col items-center p-2 text-[#6A89A7] hover:text-[#384959] transition">
+      <i class="fas fa-home text-lg"></i>
+      <span class="text-[10px] mt-1">Início</span>
+    </a>
+    <a href="#sobre" class="flex flex-col items-center p-2 text-gray-500 hover:text-[#6A89A7] transition">
+      <i class="fas fa-user text-lg"></i>
+      <span class="text-[10px] mt-1">Sobre</span>
+    </a>
+    <a href="#servicos" class="flex flex-col items-center p-2 text-gray-500 hover:text-[#6A89A7] transition">
+      <i class="fas fa-cogs text-lg"></i>
+      <span class="text-[10px] mt-1">Serviços</span>
+    </a>
+    <a href="#projetos" class="flex flex-col items-center p-2 text-gray-500 hover:text-[#6A89A7] transition">
+      <i class="fas fa-project-diagram text-lg"></i>
+      <span class="text-[10px] mt-1">Projetos</span>
+    </a>
+    <a href="#contato" class="flex flex-col items-center p-2 text-gray-500 hover:text-[#6A89A7] transition">
+      <i class="fas fa-envelope text-lg"></i>
+      <span class="text-[10px] mt-1">Contato</span>
+    </a>
+  </div>
+</nav>
+
 <!-- SCRIPTS -->
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -536,11 +579,6 @@ duration:1000,
 once:true
 });
 </script>
-
-<button id="btnTopo"
-class="fixed bottom-6 right-6 bg-[#6A89A7] text-white p-3 rounded-full shadow-lg hover:bg-[#384959] transition hidden">
-↑
-</button>
 
 </body>
 </html>
